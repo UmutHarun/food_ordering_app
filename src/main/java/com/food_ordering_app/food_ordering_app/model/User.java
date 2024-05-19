@@ -37,7 +37,7 @@ public class User {
     private List<Order> orders = new ArrayList<Order>();
 
     @ElementCollection
-    private List<RestaurantDTO> favorştes = new ArrayList<>();
+    private List<RestaurantDTO> favorites = new ArrayList<>();
 
     @OneToMany(cascade = CascadeType.ALL , orphanRemoval = true)
     private List<Address> addresses = new ArrayList<>();
